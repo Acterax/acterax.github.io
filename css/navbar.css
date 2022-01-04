@@ -1,0 +1,50 @@
+.navbar {
+    display: inline-block;
+    z-index: 1;
+    width: 120px;
+    height: calc(100vh - 7vh); /* Subtract the 10px top/bottom margins */
+    background-color: gray;
+}
+
+.navbar ul {
+    display: inline-block;
+    text-align: center;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.navbar li {
+    padding-top: 3px;
+}
+
+.navbar li button {
+    background-color: transparent;
+    border-color: transparent;
+    font-size : 20px;
+    width: auto;
+    height: 50px;
+}
+
+.navbar a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.navbar a:before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 2px;
+    bottom: 0;
+    left: 10%;
+    background-color: black;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+}

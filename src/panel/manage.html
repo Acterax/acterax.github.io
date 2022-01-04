@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage</title>
+    <script type="text/javascript" src="../js/ajax.js" defer></script>
+    <link rel="stylesheet" href="../../css/manage.css">
+    <script src="../js/api.js"></script>
+    <script src="../js/manage.js"></script>
+</head>
+<body>
+    <header></header>
+    <homecontent>
+        <navbar></navbar>
+        <div class="myform">
+            <div class="introduce">
+                <p>Indiquez ci-dessous les adresses ip utilisant HBoost</p>
+            </div>
+            <form action="#" onsubmit="api.updateWhitelist();return false" method="post">
+                <div class="text">
+                    <label for="ip1"></label>
+                    <input type="text" id="ip1" name="ip1" placeholder="127.0.0.1">
+                </div>
+                <div class="text">
+                    <label for="ip2"></label>
+                    <input type="text" id="ip2" name="ip2" placeholder="127.0.0.1">
+                </div>
+                <div class="text">
+                    <label for="ip3"></label>
+                    <input type="text" id="ip3" name="ip3" placeholder="127.0.0.1">
+                </div>
+                <div class="text">
+                    <label for="ip4"></label>
+                    <input type="text" id="ip4" name="ip4" placeholder="127.0.0.1">
+                </div>
+                <div class="text">
+                    <label for="ip5"></label>
+                    <input type="text" id="ip5" name="ip5" placeholder="127.0.0.1">
+                </div>
+
+                <div class="submitButton">
+                    <input type="submit"
+                           value="UPDATE"/>
+                </div>
+            </form>
+        </div>
+    </homecontent>
+</body>
+</html>
