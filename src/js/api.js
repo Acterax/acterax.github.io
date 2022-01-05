@@ -87,7 +87,7 @@ class API {
                 message.style.color = 'green';
                 response.json().then(function (text) {
                     document.cookie = 'token=' + text['connectionToken'] + ";path=/";
-                    document.location = 'http://localhost:63343/HBoost/src/panel/home.html?_ijt=8tn8hdt734nf8lplunq50khjig';
+                    document.location = 'https://hboost.fr/src/panel/home.html';
                 })
             } else {
                 message.textContent = 'Une erreur est survenu veuillez ré-essayer';
