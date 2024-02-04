@@ -1,7 +1,6 @@
 class API {
 
-    static API_URL = "https://api.hboost.fr/web/";
-    //static API_URL = "http://localhost/web/";
+    static API_URL = "https://51.255.50.211/web/";
 
     constructor(token) {
         this.token = token;
